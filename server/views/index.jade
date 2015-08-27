@@ -1,8 +1,21 @@
 extends ../includes/layout
 
 block main-content
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href='/') FlatRole
+                h6 - On Roll for Flats
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li
+                    a(href='/') Home
+
     section.content
         h1 Inside INDEX
-
         div(ng-view)
             h2=flatDetails
+
+
+    footer.container.text-center
+    p &copy; 2015 Being Zero Pvt. Ltd.
