@@ -50,7 +50,14 @@ STEP 6:  Angular Enabled
 STEP 7: MongoDB Integration
 ============================
 1. npm install mongoose --save
-
+2. Setup DB
+	use flatrole
+	db.flats.insert({flatNumber:'C6', memberShipPaid:true});
+	db.flats.insert({flatNumber:'C5', memberShipPaid:false});
+	db.flats.find();
+	show dbs
+	show collections
+3.
 
 CLONE AND RUN
 =============

@@ -15,6 +15,14 @@ db.once('open', function(){
    console.log('DB Connection Opened to FLATROLE');
 });
 
+var flatSchema = mongoose.Schema({flatNumber : String, memberShipPaid : Boolean});
+var Flat = mongoose.model('Flat', flatSchema);
+var flatDetails;
+
+Flat.findOne().exec(function(err, flatDoc){
+   flatDetails = flatDoc.flatNumber;
+
+});
 var app = express();
 function compile(str, path)
 {
@@ -39,7 +47,9 @@ app.get('/partials/:path', function(req, res){
 });
 
 app.get('*', function(req, res){
-   res.render('index');
+   res.render('index', {
+    flatDetails : flatDetails
+   });
 });
 
 
