@@ -42,7 +42,8 @@ STEP 5: Adding Stylus- CSS PreProcessor
 ========================================
 1. npm install stylus --save
 2. npm install body-parser morgan --save
-3.
+3. npm install stylus -g
+
 
 
 CLONE AND RUN
