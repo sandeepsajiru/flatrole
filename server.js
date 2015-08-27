@@ -2,9 +2,18 @@ var express = require('express');
 var stylus = require('stylus');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-
+var mongoose = require('mongoose');
 var port = 3000;
 
+mongoose.connect('mongodb://localhost/flatrole');
+var db = mongoose.connection;
+db.on('error', function()
+{
+   console.log('db connection error');
+});
+db.once('open', function(){
+   console.log('DB Connection Opened to FLATROLE');
+});
 
 var app = express();
 function compile(str, path)

@@ -44,6 +44,12 @@ STEP 5: Adding Stylus- CSS PreProcessor
 2. npm install body-parser morgan --save
 3. npm install stylus -g
 
+STEP 6:  Angular Enabled
+=========================
+
+STEP 7: MongoDB Integration
+============================
+1. npm install mongoose --save
 
 
 CLONE AND RUN
