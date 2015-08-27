@@ -18,7 +18,7 @@ STEP 2 : INSTALL CLIENT DEPENDENCIES
 3.  Open in IDE [WebStorm]
 4.  Add .bowerrc file
 	{
-		"dirctory" : "public/vendor"
+		"directory" : "public/vendor"
 	}
 5.  bower init
 6.  bower install jquery --save
@@ -31,11 +31,15 @@ STEP 3: Create Node Server.js
 2. npm install -g nodemon
 3. nodemon server.js
 
+STEP 4:  Add View
+===================
+1. npm install jade -g
+2. Add server/views/index.jade
+3. Render index view in response.
 
 
-
-
-## Clone and Run
+CLONE AND RUN
+=============
 npm install
 bower install
 npm install -g nodemon
