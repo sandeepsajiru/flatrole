@@ -23,3 +23,20 @@ STEP 2 : INSTALL CLIENT DEPENDENCIES
 5.  bower init
 6.  bower install jquery --save
 7.  bower install angular angular-route angular-resource --save
+
+
+STEP 3: Create Node Server.js
+==============================
+1. Write Server Code
+2. npm install -g nodemon
+3. nodemon server.js
+
+
+
+
+
+## Clone and Run
+npm install
+bower install
+npm install -g nodemon
+nodemon server.js
