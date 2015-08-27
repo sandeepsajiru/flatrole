@@ -38,6 +38,13 @@ STEP 4:  Add View
 3. Render index view in response.
 
 
+STEP 5: Adding Stylus- CSS PreProcessor
+========================================
+1. npm install stylus --save
+2. npm install body-parser morgan --save
+3.
+
+
 CLONE AND RUN
 =============
 npm install
