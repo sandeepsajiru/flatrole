@@ -2,6 +2,24 @@ git config --global credential.helper wincred
 git config --global user.name "Sandeep Wadhwa" 
 git config --global user.email sandeep.sajiru@gmail.com 
 
-
+STEP 1 : Create Project and Dependencies Install
+=================================================
 1.  npm init
 2.  npm install --save express jade  
+
+
+STEP 2 : INSTALL CLIENT DEPENDENCIES
+=================================================
+1.  npm install bower -g
+2.  Directory Structure
+	- server    [For Node Files]
+	- public    [For JS, CSS etc]
+	
+3.  Open in IDE [WebStorm]
+4.  Add .bowerrc file
+	{
+		"dirctory" : "public/vendor"
+	}
+5.  bower init
+6.  bower install jquery --save
+7.  bower install angular angular-route angular-resource --save
