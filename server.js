@@ -22,8 +22,12 @@ app.use(stylus.middleware(
 ));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true }));
 app.use(express.static(__dirname + '/public'));
+
+app.get('/partials/:path', function(req, res){
+   res.render('partials/'+req.params.path);
+});
 
 app.get('*', function(req, res){
    res.render('index');
